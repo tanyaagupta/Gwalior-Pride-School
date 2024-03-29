@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Gwalior Pride School | Home </title>
+        <script>
+            let currentSlide = 1;
+            function changeSlide(n) {
+                showSlide(currentSlide += n);
+            }
+
+            function showSlide(n) {
+                const slides = document.querySelectorAll('.slide');
+                if (n > slides.length) {
+                    currentSlide = 1;
+                }
+                if (n < 1) {
+                    currentSlide = slides.length;
+                }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = 'none';
+                }
+                slides[currentSlide - 1].style.display = 'block';
+            }
+            showSlide(currentSlide);
+        </script>
+        <link rel="stylesheet" href="style new.css">
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <header>
+            <a class='logo' href='#'><img src="motto1.jpeg" alt="Gwalior Pride School">
+            </a>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href='#' style='color: #FEC727;'>Home</a>
+                <a href='/home'>About Us</a>
+                <a href='/team'>Gallery</a>
+                <a href='/pub'>Events & Activities</a>
+                <a href='/events'>Admissions</a>
+                <a href="applyNow.html"> <button type="button" href="#" class = "apply"> Apply Now </button> </a>  
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="image">
+                <img src="campus-PSG.webp" alt="hhff">
+            </div>
+        </section>
+<section class ="welcome">
+        <div class = "part1">
+            <h1 class="headingg"> Welcome to Gwalior Pride School</h1>
+            <p class ="homeContent">Pathways School Gurgaon was the first ever IB Continuum school in India offering all 4 programmes of the International Baccalaureate Organisation (IBO) of Geneva, Switzerland.
+                <br> <br> The school focuses on student-centered learning and applies the Multiple Intelligences approach, developed by Dr. Howard Gardner from Harvard University.</p>
+                <br>  
+                <a href="AboutUs.html"> <button type="button" href="#" class = "knowMore"> Know More </button> </a>  
+            </div>
+        </section>
+            <!-- latest articles -->
+    <section class="articles">
+        <div>
+            <h1>OUR MENTORS</h1>
+        </div>
+        <div>
+            <p>"Amity’s visionary guiding lights believe that in education lies the biggest service to the individual, nation, humanity and the world" </p>
+        </div>
+        <div class="articles-container">
+            <div class="article_card">
+                <a href="AboutUs.html"
+                    target="_blank" style="text-decoration: none;">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h2>Anita Gupta</h2>
+                        <h3>Principal</h3>
+                        <p>At Gwalior Pride School, we value open communication and collaboration with parents and guardians. We believe that a strong...</p>
+                    </div>
+                    <img class="artimg" src="principal.webp" alt="principal">
+            </div>
+            </a>
+            <div class="article_card">
+                <a href="AboutUs.html"
+                    target="_blank" style="text-decoration: none;">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h2>Sudhir Gupta</h2>
+                        <h3>Director</h3>
+                        <p>“In a world torn by conflicts and differences in social, economic, and political realms, we must strive to embrace new perspectives....</p>
+                    </div>
+                    <img class="artimg" src="tiger.jpg" alt="tiger">
+            </div>
+        </a>
+    </section>
+
+        <section class = "Testimonials">
+            <div class="slideshow-container">
+                <input type="radio" id="trigger1" name="slider">
+                <label for="trigger1"><span class="sr-only">Slide 1 of 5. A photo of a mountain pass with a winding path along the river and a view of distant mountains hiding in the mist.</span></label>
+                <div class="slide bg1"><p>"Gwalior Pride Kids School has been a blessing for our child. The teachers are caring and skilled, creating a nurturing environment for learning. Our son's confidence has soared, and he's excelling academically. We couldn't be happier with his progress!"</p></div>
+
+                <input type="radio" id="trigger2" name="slider" checked>
+                <label for="trigger2"><span class="sr-only">Slide 2 of 5. A photo of a bird eating sunflower seeds from an open hand.</span></label>
+                <div class="slide bg2"><p>"Choosing Gwalior Pride Kids School was the best decision we made for our daughter. The school's holistic approach to education ensures her overall development.
+                    The extracurricular activities complement the strong academic foundation. She loves going to school every day!"</p></div>
+
+                <input type="radio" id="trigger3" name="slider">
+                <label for="trigger3"><span class="sr-only">Slide 3 of 5. A photo of a concrete bridge over the river with high voltage power lines on both banks.</span></label>
+                <div class="slide bg3"><p>"We're thrilled with the quality of education our children receive at Gwalior Pride Kids School. The dedicated staff goes above and beyond to ensure every child's needs are met. The school's emphasis on values and character development sets it apart. Highly recommend it!"</p></div>
+
+
+        <!-- Previous and Next Buttons -->
+                <div class="prev" onclick="changeSlide(-1)"></div>
+                <div class="next" onclick="changeSlide(1)"></div>
+            </div>
+        </section>
+        <script>
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('header');
+                if (window.scrollY > 0) {
+                    header.classList.add('header-scroll');
+                } else {
+                    header.classList.remove('header-scroll');
+                }
+            });
+    </script>
+    </body>
+</html>
