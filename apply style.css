@@ -1,0 +1,372 @@
+body {
+    /* background: linear-gradient(to right, #0c1013, #0e1214, #14191c, #192024, #1c2428, #1e262b); */
+    margin: 0; 
+    background: #374C99;
+}
+
+header {
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: linear-gradient(to right, #08051f, #0b072a, #12072e, #150934, #1e0e3d); */
+    background-color: #25387B;
+    backdrop-filter: blur(10px);
+    padding: 0.2rem 1%;
+}
+
+header .logo img {
+    width: 250px;
+    /* height: 202px; */
+    text-decoration: none;
+    /* padding-left: 0.75rem; */
+    /* padding-right: .5rem; */
+    color: rgb(153, 153, 153);
+}
+
+/* links in navigation bar (buttons) */
+header .navbar{
+    display: inline-block;
+    position: fixed;
+    /* to shift saare buttons upar neeche: */
+    top: 1rem; 
+    right: 1.5rem;
+    transition: .3s;
+}
+
+header .navbar a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.10rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1.1rem;
+    /* color of buttons on navbar: */
+    color: white;
+    position: relative;
+}
+
+header .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0.2rem;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    /* background: #EB8A18; */
+    transition: 0.4s;
+}
+
+header .navbar a:hover::after {
+    width: 100%;
+}
+
+/* to change color of buttons on navbar on hovering */
+header .navbar a:hover {
+    color: #FEC727;
+}
+.header-scroll {
+    background-color: #25387B;
+    opacity: 0.9;
+}
+
+.apply{
+    margin-right: 10px;
+    background-color: #FEC727;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
+    margin: 4px;
+    border-radius: 12px;
+    color: #3D3B3B;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* change color of apply now button on hovering */
+.apply:hover {
+    background-color: black;
+    color: white;
+}
+
+/* map ki position */
+.banner{
+    margin: 0;
+    padding-top:5.4rem;
+}
+
+.map {
+    filter: invert(95%) sepia(50%) hue-rotate(180deg) contrast(100%);
+}
+
+section {
+    background-color: #020719; /* Same as container background */
+    padding-top: 0; /* Remove top padding */
+    margin-top: -0.3rem; /* Adjust margin to remove extra space from the banner */
+}
+
+.container {
+    padding-top: 3rem; 
+    position: relative;
+    display: flex;
+    min-width: 1100px;
+    min-height: 550px;
+    z-index: 0;
+    background-image: linear-gradient(180deg, #020719, #25387B); /* Move this background to section */
+}
+
+.container .contactinfo {
+    position: relative;
+    top: 2rem;
+    width: 20rem;
+    height: 83%;
+    background: #D8AE32;
+    z-index: 100;
+    padding: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    padding-left:1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 15px 20px rgb(19, 18, 18);
+    border-radius: 9px;
+    align-items: center;
+}
+
+.container .contactinfo h2 {
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: Trebuchet 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.container .contactinfo span {
+    font-family: Trebuchet 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    font-size: 1.1rem;
+    word-break: break-word;
+    color: black;
+}
+
+.container .contactinfo .info {
+    position: relative;
+    margin: 20px 0;
+}
+
+.container .contactinfo .info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    align-items: flex-start;
+    /* display: flex; */
+}
+
+.container .contactinfo .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+.container .contactinfo .info li span:nth-child(1) svg {
+    max-width: 100%;
+}
+
+.container .contactinfo .info li span:nth-child(2) {
+    color: black;
+    margin: 0 10px 10px;
+    font-weight: 300;
+}
+
+.container .contactinfo .sci {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container .contactinfo .sci li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.container .contactinfo .sci li a {
+    text-decoration: none;
+}
+
+.container .contactinfo .sci li a svg {
+    opacity: 0.5;
+}
+
+.container .contactinfo .sci li:hover a svg {
+    opacity: 1;
+}
+
+.container .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 450px;
+    margin-right: 2rem;
+    padding-left: 4rem;
+    /* width: calc(100%-150px); */
+    /* height: 100%; */
+    box-shadow: 0 15px 20px rgb(19, 18, 18);
+    /* box-shadow: 0 50px 50px; */
+    border-radius: 9px;
+}
+
+.container .contactForm h2 {
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: Trebuchet 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    color: #272727;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.container .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.container .contactForm .formBox input {
+
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(14, 2, 2);
+    box-sizing: border-box;
+    /* background-color: rgb(48, 47, 47); */
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.container .contactForm .formBox textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(14, 2, 2);
+    box-sizing: border-box;
+    /* background-color: rgb(48, 47, 47); */
+    height: 80px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.container .contactForm .formBox button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
+    margin: 4px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    color: #3D3B3B;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    background-color: #FEC727;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .contactinfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    .container .contactForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    section::before {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .contactForm {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .contactinfo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 30px;
+    }
+
+    .container.contactForm {
+        padding: 25px;
+    }
+
+    .container.contactinfo {
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .contactinfo ul.sci {
+        margin-top: 40px;
+    }
+}
+
+.container .contactForm .formBox button:hover {
+    background-color: black;
+    color: white;
+}
