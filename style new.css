@@ -35,9 +35,10 @@ header .navbar{
 
 header .navbar a {
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.10rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     margin-left: 1.1rem;
     /* color of buttons on navbar: */
     color: white;
@@ -52,7 +53,6 @@ header .navbar a::after {
     left: 0;
     bottom: 0;
     border-radius: 1rem;
-    /* background: #EB8A18; */
     transition: 0.4s;
 }
 
@@ -62,7 +62,7 @@ header .navbar a:hover::after {
 
 /* to change color of buttons on navbar on hovering */
 header .navbar a:hover {
-    color: #FEC727;
+    color: #F5AE25;
 }
 .header-scroll {
     background-color: #25387B;
@@ -71,7 +71,7 @@ header .navbar a:hover {
 
 .apply{
     margin-right: 10px;
-    background-color: #FEC727;
+    background-color: #F5AE25;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -84,7 +84,8 @@ header .navbar a:hover {
     color: #3D3B3B;
     font-weight: 600;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial', sans-serif;
 }
 
 /* change color of apply now button on hovering */
@@ -98,13 +99,11 @@ header .navbar a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    /* min-height: 80vh; */
     align-items: center;
 }
 
 .home .image {
     flex: 1 1 20rem;
-    /* padding-top: 7rem; */
     position: relative;
     text-align: center;
     color: white;
@@ -117,55 +116,57 @@ header .navbar a:hover {
 }
 
 .welcome {
-  margin-top: -2.9rem; /* Adjust this value as needed */
+  margin-top: -2.9rem; 
 }
 
 .welcome p{
   color:black;
-  font-size: 20px;
+  font-size: 1.723vw;
   padding-top: 5px;
   padding-left: 150px;
   padding-right: 150px;
   text-align: center;
-  font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+  font-family: 'Arial', sans-serif;
+  /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .headingg{
   color:#25387B;
-  font-size: 45px;
+  font-size: 3.876vw;
   padding-top: 20px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+  font-family: 'Arial', sans-serif;
+  /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 
 .welcome .part1 {
-  background-color: #FFF3D2;
+  background-color: #F6F6EE;
   align-items: center;
   text-align: center;
-  /* position: relative; */
 }
 
 .welcome .knowMore{
   justify-content: center;
   margin-bottom: 1.5rem;
-  background-color: #FEC727;
+  background-color: #F5AE25;
   border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  width: 130px;
-  height: 45px;
-  border-radius: 12px;
+  font-size: 1.378vw;
+  width: 11.2vw;
+  height: 3.876vw;
+  border-radius: 1.033vw;
   color: #3D3B3B;
   cursor: pointer;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Arial', sans-serif;
 }
 
 /* change color of apply now button on hovering */
@@ -174,18 +175,14 @@ background-color: black;
 color: white;
 }
 
-/*  latest articles */
-/* .articles {
-    padding: 1rem;
-} */
-
 .articles .part2 {
-  background-color: #474545;
+  background-color: #E4E4E6;
   align-items: center;
   text-align: center;
   padding-bottom: 0.5rem;
-  /* position: relative; */
 }
+
+
 
 /* our mentors heading */
 .articles h1 {
@@ -193,25 +190,23 @@ color: white;
     /* to shift entire section upar neeche: */
     margin: 0;
     margin-bottom: 10px;
-    font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
+    font-family: 'Arial', sans-serif;
     font-size: 2.7rem;
     font-weight: bold;
     text-align: center;
-    color: #FEC727;
-    text-shadow: 2px 4px 4px rgba(20, 17, 59, 0.25);
+    color: #25387B;
 }
 
 /* text below our mentors heading */
 .articles p {
     margin-top: 1rem;
-    font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Arial', sans-serif;
+    /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
     /* font-family: 'Merriweather', sans-serif; */
-    /* font-weight: 500; */
     font-size: 1.5rem;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 /* dono boxes ki individual orientation */
@@ -257,29 +252,32 @@ color: white;
 /* name of mentors on hovering on image */
 .article_card .content h2 {
     text-align: left;
-    color: #FEC727;
+    color: #25387B;
     margin-bottom: 0;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+    /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
+    font-family: 'Arial', sans-serif;
 }
 
 /* desgination of mentors */
 .article_card .content h3 {
     text-align: left;
-    color: #D8AE32;
+    color: white;
     margin-top: 0; 
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+    /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
+    font-family: 'Arial', sans-serif;
 }
 
 /* design of message from mentors on hovering */
 .article_card .content p {
-    color: white;
+    color: black;
     text-align: left;
     padding-right: 30px;
     font-size: 20px; 
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+    /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
+    font-family: 'Arial', sans-serif;
 }
 
 /* orientation and visiblity oof msg from mentors on hovering */
@@ -307,13 +305,15 @@ color: white;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: contrast(0.5);
+    /* backdrop-filter: contrast(0.1); */
     clip-path: circle(100px at center);
     transition: 0.5s;
 }
 
 .article_card:hover .circle::before {
-    backdrop-filter: contrast(0.5);
+    background-color:#F5AE25;
+    opacity: 0.7;
+    /* backdrop-filter: contrast(0.1); */
     clip-path: circle(400px at center);
 }
 
@@ -345,33 +345,20 @@ color: white;
 .testimonials .part3 {
   display:flex;
   align-items: stretch;
-  background-color: #EFEEEE;
-  /* align-items: center; */
+  background-color: #FCFBFB;
   text-align: center;
   position: relative;
 }
 
-/* .testimonials h1 {
-    padding-top: 25px;
-    margin: 20px;
-    margin-bottom: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.7rem;
-    font-weight: bold;
-    text-align: center;
-    color: #25387B;
-} */
 
 /* text- "testimonials of parents" */
 .testimonials h1 {
-  /* display: flex; */
   position: absolute;
   margin: 20px;
   bottom: 0;
-  /* margin-top:50px; */
-  /* margin-bottom: 10px; */
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica;
+  /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
+  font-family: 'Arial', sans-serif;
   font-size: 3.5vw;
   font-weight: bold;
   text-align: left;
@@ -380,11 +367,11 @@ color: white;
 
 .container{
   position: relative;
-  /* background: #D8AE32; */
   width: 70%;
   height: auto;
   float:right;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* dabba - testimonials */
@@ -395,22 +382,13 @@ color: white;
   width: 30%;
   height: auto;
   float:left;
-  background: #D8AE32;
+  background: #F5AE25;
+  padding-bottom: 2rem;
 }
 
 .slideshow-container {
   font-size: 1.5rem;
 }
-
-/* The dot/bullet/indicator container */
-/* .dot-container {
-  position: relative;
-  background: #FFF3D2;
-  text-align: center;
-  width: 70%;
-  height: auto;
-  float:right;
-} */
 
 /* Slides */
 .mySlides {
@@ -441,7 +419,6 @@ color: white;
 }
 
 /* Position the "next button" to the right */
-
 .prev {
   position: absolute;
   left: 0;
