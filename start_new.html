@@ -3,7 +3,10 @@
     <head>
         <title> Gwalior Pride School | Home </title>
         <script>
-
+var slideIndex = 1; // Initialize slideIndex to 1 when the page loads
+            window.onload = function() {
+                showSlides(slideIndex);
+            };
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
