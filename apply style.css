@@ -1,6 +1,6 @@
 body {
     margin: 0; 
-    background: #374C99;
+    background: #EEEDE1;
 }
 
 header {
@@ -61,7 +61,7 @@ header .navbar a:hover::after {
 
 /* to change color of buttons on navbar on hovering */
 header .navbar a:hover {
-    color: #FEC727;
+    color: #F5AE25;
 }
 .header-scroll {
     background-color: #25387B;
@@ -70,7 +70,7 @@ header .navbar a:hover {
 
 .apply{
     margin-right: 0.625rem;
-    background-color: #FEC727;
+    background-color: #F5AE25;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -92,16 +92,6 @@ header .navbar a:hover {
     color: white;
 }
 
-/* #menu-bar {
-    font-size: 3rem;
-    cursor: pointer;
-    color: #666;
-    border: .1rem solid #666;
-    border-radius: .3rem;
-    padding: .5rem 1.5rem;
-    display: none;
-} */
-
 /* map ki position */
 .banner{
     margin: 0rem;
@@ -120,56 +110,38 @@ header .navbar a:hover {
     align-items: center;
 }
 
-.map {
-    filter: invert(95%) sepia(50%) hue-rotate(180deg) contrast(100%);
+
+.contactinfo{
+    width: 350px; 
+    height: auto; 
+    background-color: #F5AE25;
+    box-shadow: 0 0.4375rem 1.25rem rgb(19, 18, 18);
+    border-radius: 0.5625rem;
+    align-self: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-section {
-    background-image: linear-gradient(180deg, #020719, #25387B);
-    padding-top: 0; 
-    margin-top: -0.3rem; /* Adjust margin to remove extra space from the banner */
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+.contactForm{
+    width: 720px; 
+    height: auto; 
+    background-color: white;
+    box-shadow: 0 0.4375rem 1.25rem rgb(19, 18, 18);
+    border-radius: 0.5625rem;
 }
 
 .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* gap between the 2 boxes - both horizontally and vertically */
+    gap: 3.2rem;
     padding-top: 3rem; 
-    position: relative;
-    display: flex;
-    min-width: 68.75rem;
-    min-height: 34.375rem;
-    z-index: 0;
-    background-image: linear-gradient(180deg, #020719, #25387B);
-}
-
-.container .contactinfo {
-    position: relative;
-    top: 2rem;
-    width: 20rem;
-    height: 83%;
-    background: #D8AE32;
-    z-index: 100;
-    padding: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom:1rem;
-    padding-left:1rem;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 0.9375rem 1.25rem rgb(19, 18, 18);
-    border-radius: 0.5625rem;
+    background-color: #EEEDE1;
+    flex: 1;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .container .contactinfo h2 {
@@ -178,7 +150,6 @@ section::before {
     color: black;
     font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 1.25rem;
 }
 
 .container .contactinfo span {
@@ -188,69 +159,53 @@ section::before {
     color: black;
 }
 
-.container .contactinfo .info {
-    position: relative;
-    margin: 1.25rem 0;
-}
-
 .container .contactinfo .info li {
-    position: relative;
     list-style: none;
     display: flex;
     margin: 1.25rem 0;
     align-items: flex-start;
 }
 
+/* icons */
 .container .contactinfo .info li span:nth-child(1) {
     width: 1.875rem;
     min-width: 1.875rem;
 }
 
+/* dunno */
 .container .contactinfo .info li span:nth-child(1) svg {
     max-width: 100%;
 }
 
+/* text infront of the icons */
 .container .contactinfo .info li span:nth-child(2) {
     color: black;
     margin: 0 0.625rem 0.625rem;
     font-weight: 300;
 }
 
+/* facebook, insta */
 .container .contactinfo .sci {
     position: relative;
     display: flex;
     margin: auto;
     margin-bottom: 1.25rem;
+    justify-content: center;
+    padding-inline-start: 0;
 }
 
 .container .contactinfo .sci li {
     list-style: none;
+    /* beech ka gap */
     margin-right: 1.25rem;
 }
 
-.container .contactinfo .sci li a {
-    text-decoration: none;
-}
-
 .container .contactinfo .sci li a svg {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .container .contactinfo .sci li:hover a svg {
     opacity: 1;
-}
-
-.container .contactForm {
-    position: absolute;
-    padding: 1.5625rem 3.125rem;
-    background: #fff;
-    margin-left: 28.125rem;
-    margin-right: 2rem;
-    padding-left: 4rem;
-    /* width: calc(100%-150px); */
-    /* height: 50%; */
-    box-shadow: 0 0.9375rem 1.25rem rgb(19, 18, 18);
-    border-radius: 0.5625rem;
 }
 
 .container .contactForm h2 {
@@ -268,6 +223,9 @@ section::before {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 0.9375rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
 }
 
 .container .contactForm .formBox input {
@@ -296,11 +254,6 @@ section::before {
 }
 
 .container .contactForm .formBox button {
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
     font-size: 1rem;
     width: 8.125rem;
     height: 2.8125rem;
@@ -310,10 +263,9 @@ section::before {
     cursor: pointer;
     color: #3D3B3B;
     border: none;
-    max-width: 9.375rem;
-    padding: 0.75rem;
-    background-color: #FEC727;
+    background-color: #F5AE25;
     margin: auto;
+    float: right;
 }
 
 .container .contactForm .formBox button:hover {
@@ -321,158 +273,140 @@ section::before {
     color: white;
 }
 
-@media (max-width: 61.9375rem) {
-    /* 61.9375rem */
-
+@media (max-width: 1112px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
     }
 
     .container .contactForm {
-        align-self: center;
-        width: 50%;
-        height: auto;
-        top: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-        right:2rem;
+        width: 90%;
     }
 
     .container .contactinfo {
-        align-self: center;
-        width: 50%;
-        height: auto;
-        width: 100%;
-        height: auto;
-        top: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-        right:2rem;
+        width: 90%;
     }
 }
 
-/* @media (max-width: 37.5rem) {
-    section {
-        padding: 1.875rem;
-    }
+/* .footer {
+    /* margin-top: 50px; */
+    /* background-color: #25387B;
+    opacity: 0.95;
+    padding: 20px 0 0 0;
+}
 
-    .container.contactForm {
-        padding: 1.5625rem;
-    }
+@media(max-width:600px) {
 
-    .container.contactinfo {
-        padding: 1.5625rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .container .contactinfo ul.sci {
-        margin-top: 2.5rem;
-    }
-} */
-
-
-/* @media (max-width: 75rem) {
-    .container {
-        width: 90%;
-        min-width: auto;
-        margin: 1.25rem;
-        box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.2);
-    }
-
-    .container .contactinfo {
-        top: 0;
-        height: 34.375rem;
-        position: relative;
-        box-shadow: none;
-        margin-top: 1.25rem;
-    }
-
-    .container .contactForm {
-        position: relative;
-        width: calc(100% - 21.875rem);
-        padding-left: 0;
-        margin-left: 0;
-        padding: 2.5rem;
-        height: 34.375rem;
-        box-shadow: none;
-    }
-}*/
-
-/* @media (max-width: 61.9375rem) {
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-} */
-
-
-/* @media (max-width: 61.9375rem) { */
-    /* Adjust the layout for smaller screens like phones */
-    /* section::before {
+    footer .f-about,
+    footer #society {
         display: none;
-        margin-top: -0.3rem;
+    }
+}
+
+
+.f-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.f-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-row {
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.f-row .socials a {
+    display: inline-flex;
+    height: 3.44vw;
+    width: 3.44vw;
+    background-color: black;
+    margin: 0px 2px 5px 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3 ease;
+    justify-content: space-around;
+    opacity: 0.9;
+}
+
+.f-row .socials a:hover {
+    background-color: #F5AE25;
+    color: white;
+    opacity: 0.9;
+}
+
+.f-row .address1 {
+    display: flex;
+    font-size: 1.25vw;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.f-row .address1 svg {
+    margin-right: 10px;
+    color: #F5AE25;
+}
+
+.f-row .address {
+    display: flex;
+    font-size: 1.25vw;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 25px;
     }
 
-    .container {
-        display: flex; */
-        /* flex-direction: column-reverse; Reverse the order to have Apply Now on top */
-    /* }
+}
 
-    .banner{
-        padding-top: 5.4rem;
-    }
-
-    .container .contactinfo { */
-        /* width: 100%; Make the form full width
-        height: auto; Let it take up as much height as needed
-    }
-
-    .container .contactForm { */
-        /* width: 100%; Make the form full width */
-        /* height: auto; Let it take up as much height as needed */
-    /* } */
-/* } */
-/* @media (max-width: 61.9375rem) {
-    /* 61.9375rem */
-    /* section::before { */
-        /* display: none;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .container .contactForm {
+@media(max-width: 767px) {
+    .footer-col {
         width: 100%;
-        height: auto;
     }
+}
 
-    .container .contactinfo {
-        width: 100%;
-        height: auto;
-    }
-} */ 
+.footer .us { */
+    /* margin: 0 0 0 0; */
+    /* padding-bottom: 10px; */
+    /* text-align: center; */
+    /* background-color: #08051f; */
+    /* color: rgb(146, 146, 146); */
+/* }
 
-/* @media (max-width: 37.5rem) {
-    section {
-        padding: 1.875rem;
-    }
+.footer .us a{
+    text-decoration: none;
+    color: #F5AE25;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.5vw;
+}
 
-    .container.contactForm {
-        padding: 1.5625rem;
-    }
+.footer .us a:hover {
+    color: white;
+}
 
-    .container.contactinfo {
-        padding: 1.5625rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+hr.lines {
+    border-top: 1px solid white;
+  } */
 
-    .container .contactinfo ul.sci {
-        margin-top: 2.5rem;
-    }
-} */
-
+#footer > p:first-child { float: left; text-align: left; width: 33.3%; } 
+#footer > p:nth-child(2) { float: left; text-align: center; width: 33.4%; } 
+.foot .location{
+    float: right; 
+    /* height: 15rem; */
+    width: 20rem;
+}
