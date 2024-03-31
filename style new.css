@@ -133,7 +133,7 @@ header .navbar a:hover {
 
 .headingg{
   color:#25387B;
-  font-size: 3.876vw;
+  font-size: 3.3vw;
   padding-top: 20px;
   font-weight: bold;
   text-align: center;
@@ -182,8 +182,6 @@ color: white;
   padding-bottom: 0.5rem;
 }
 
-
-
 /* our mentors heading */
 .articles h1 {
     padding-top: 2rem;  /* to shift headin upar neeche */
@@ -192,7 +190,7 @@ color: white;
     margin-bottom: 10px;
     /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
     font-family: 'Arial', sans-serif;
-    font-size: 2.7rem;
+    font-size: 3.3vw;
     font-weight: bold;
     text-align: center;
     color: #25387B;
@@ -204,7 +202,7 @@ color: white;
     font-family: 'Arial', sans-serif;
     /* font-family: Tahoma, Verdana, 'Trebuchet MS', 'Times New Roman', Arial, Helvetica; */
     /* font-family: 'Merriweather', sans-serif; */
-    font-size: 1.5rem;
+    font-size: 1.723vw;
     text-align: center;
     color: black;
 }
@@ -467,3 +465,127 @@ color: white;
 }
 
 .author {color: black;}
+
+.footer {
+  /* margin-top: 50px; */
+  background-color: #25387B;
+  opacity: 0.95;
+  /* padding: 20px 0 0 0; */
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .ContactUs h2{
+  font-size: 2.5vw;
+  color: white;
+}
+
+.footer .ContactUs ul{
+  color: white;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.footer .ContactUs ul li{
+  margin-bottom: 1vw;
+}
+
+.footer .ContactUs{
+  /* padding-top: 0.5vw; */
+  padding-bottom: 0.5vw;
+  margin-left: 3vw;
+  width: 30%;
+  /* padding-inline-start: 0; */
+}
+
+.footer .socials a {
+  display: inline-flex;
+  /* height: 5vw; */
+  width: 3vw;
+  /* background-color: black; */
+  margin: 8px 0px 0px 0px;
+  /* text-align: center; */
+  /* align-items: center; */
+  /* border-radius: 20%; */
+  color: white;
+  transition: all 0.3 ease;
+  /* justify-content: space-around; */
+  opacity: 0.9;
+}
+
+.footer .socials svg:hover {
+  /* background-color: #F5AE25; */
+  color: #F5AE25;
+  opacity: 0.9;
+}
+
+.footer .address1 {
+  display: flex;
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .address1 svg {
+  margin-right: 10px;
+  color: white;
+}
+
+.footer .Links{
+  /* text-align: center; */
+  /* margin-left: vw; */
+  padding-top: 0.5vw;
+  width: 20%;
+}
+
+.footer .Links ul{
+  list-style: none;
+}
+
+.footer .Links ul li{
+  margin-bottom: 0.65vw;
+}
+
+.footer .Links ul a{
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+}
+
+.footer .Links ul a:hover {
+  color: #F5AE25;
+}
+
+.footer .Map{
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  width: 50%;
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.footer .Map iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 80%; */
+}
+
+.yellowBar{
+  opacity: 0.95;
+  height: 2vw;
+  background-color: #F5AE25;
+}
+
+.yellowBar p{
+  font-size: 1.2vw;
+  padding-right: 0.5vw;
+  float: right;
+  margin: 0;
+  line-height: 2vw;
+}
