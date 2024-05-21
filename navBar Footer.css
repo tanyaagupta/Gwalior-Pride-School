@@ -181,7 +181,8 @@ header .navbar a:hover {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #F5AE25;
+    color: white;
     display: block;
     /* color : #F5AE25; */
 }
