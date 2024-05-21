@@ -375,10 +375,10 @@ color: white;
 }
 
 .schools .schoolsss{
-  background-color: #E0C389;
-  background-image: url("output-onlinepngtools1.png");
+  background-color: #F6F6EE;
+/*   background-image: url("output-onlinepngtools1.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .schools .ourSchool{
@@ -413,7 +413,7 @@ position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
-background-color: #6A2835;
+background-color: #25387B;
 opacity: 0.85;
 overflow: hidden;
 width: 100%;
@@ -428,7 +428,7 @@ height: 100%;
 }
 
 .schools .part4 .text {
-color: white;
+color: #25387B;
 font-size: 20px;
 position: absolute;
 padding-left: 10%;
