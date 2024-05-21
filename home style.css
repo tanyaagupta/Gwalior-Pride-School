@@ -151,7 +151,7 @@ color: white;
     width: calc(45% - 20px); 
     left: 0;
     padding: 0 25px; /* Added padding */
-    transition: 0.5s;
+/*     transition: 0.5s; */
     opacity: 1;
     visibility: hidden;
     top: 0;
@@ -234,7 +234,7 @@ color: white;
     transform: translate(-50%, -50%);
     height: 300px;
     pointer-events: none;
-/*     transition: 0.5s; */
+    transition: 0.5s;
 }
 
 .article_card:hover img {
