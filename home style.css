@@ -234,7 +234,7 @@ color: white;
     transform: translate(-50%, -50%);
     height: 300px;
     pointer-events: none;
-    transition: 0.5s;
+/*     transition: 0.5s; */
 }
 
 .article_card:hover img {
