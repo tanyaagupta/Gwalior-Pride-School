@@ -384,7 +384,7 @@ color: white;
 .schools .ourSchool{
   padding-top: 2vw;
   text-align: center;
-  color: white;
+  color: #25387B;
   margin-block-start: 0;
   font-size: 3vw;
 }
@@ -428,7 +428,7 @@ height: 100%;
 }
 
 .schools .part4 .text {
-color: #25387B;
+color: white;
 font-size: 20px;
 position: absolute;
 padding-left: 10%;
