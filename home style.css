@@ -225,7 +225,6 @@ color: white;
     clip-path: circle(400px at center);
 }
 
-
 .article_card img {
     position: absolute;
     border-radius: 20px;
@@ -476,3 +475,4 @@ margin: 0 auto;
 }
 
 .author {color: black;}
+
